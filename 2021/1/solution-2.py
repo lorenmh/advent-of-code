@@ -15,5 +15,6 @@ for i, line in enumerate(input[3:]):
     new_window = sliding_window - input[i] + input[3 + i]
     if new_window > sliding_window:
         counter += 1
+    sliding_window = new_window
 
 print(counter)
