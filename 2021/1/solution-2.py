@@ -11,6 +11,7 @@ input = list(map(int, input))
 
 counter = 0
 sliding_window = sum(input[:3])
+print(sliding_window)
 for i, line in enumerate(input[3:]):
     new_window = sliding_window - input[i] + input[3 + i]
     if new_window > sliding_window:
